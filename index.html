@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>تَذْكِره</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<audio hidden></audio>
+	<div class="app">
+		<div class="container">
+			<div class="surah">
+				<div class="mainScreen">
+					<div class="pages">
+						<div class="details">
+							<h3 id="surahName"></h3>
+							<h3 id="ayatNumber"></h3>
+							<h3 id="guzu"></h3>
+						</div>
+						<div class="content">
+							<div class="bg"></div>
+							<div class="ayat"></div>
+						</div>
+					</div>
+					<div class="options">
+						<div class="title">
+							<h3>الاعدادات</h3>
+						</div>
+						<div class="mainArea">
+							<div class="surahSelection">
+								<h4>اختر السورة</h4>
+								<div class="selectCont">
+									<select id="surahSelect">
+										
+									</select>
+								</div>
+							</div>
+							<div class="reciterSelection">
+								<h4>اختر القارئ</h4>
+								<div class="selectCont">
+									<select id="reciterSelect">
+										
+									</select>
+								</div>
+							</div>
+							<div class="tafsirSelection">
+								<h4>اختر التفسير</h4>
+								<div class="selectCont">
+									<select id="tafsirSelect">
+										
+									</select>
+								</div>
+							</div>
+							<div class="translateSelection">
+								<h4>اختر الترجمة</h4>
+								<div class="selectCont">
+									<select id="translateSelect">
+				
+									</select>
+								</div>
+							</div>
+							<div class="font">
+								<h4>اعدادات الخط</h4>
+								<div class="controls">	
+									<button id="zoomIn"><i class="fa-solid fa-add"></i></button>
+									<span id="fontSize">10</span>
+									<button id="zoomOut"><i class="fa-solid fa-minus"></i></button>
+								</div>
+							</div>
+							<div class="right">
+								<h4>تم انشاء هذا التطبيق بواسطة محمد أبو سعدة</h4>
+								<ul>
+									<li><a href="https://github.com/MohamedAboSeada"><i class="fa-brands fa-github"></i></a></li>
+									<li><a href="https://web.facebook.com/profile.php?id=100052054809483"><i class="fa-brands fa-facebook"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/mohamed-aboseada-0b8171166/"><i class="fa-brands fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+							<div class="version">
+								<p>Tazkira V 1.0</p>
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<div class="title">
+							<h3>البحث</h3>
+						</div>
+						<div class="mainArea">
+							<img src="images/Magnify-1s-200px.gif">
+							<div class="searchBar">
+								<input placeholder="ابحث عن الاية" type="search" id="search">
+								<button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+							</div>
+							<div class="results">
+								<ul id="searchList">
+									<li><h3>لا توجد نتائج</h3></li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="translation">
+						<div class="title">
+							<h3 id="surahName">الترجمة</h3>
+							<h3 id="ayatNumber"></h3>
+							<h3 id="guzu"></h3>
+						</div>
+						<div class="content2">
+							<h1>هذا التبويب تحت التطوير<i class="fa-solid fa-hammer"> </i></h1>
+							<div class="ayat2"></div>
+						</div>
+					</div>
+					<div class="tafsir">
+						<div class="title">
+							<h3>التفسير</h3>
+						</div>
+						<div class="mainArea">
+							<div class="tafsirArea">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><button id="tafsir"><i class="fa-solid fa-book"></i></button></li>
+					<li><button id="translation"><i class="fa-solid fa-language"></i></button></li>
+					<li><button id="pages" class="active"><img src="images/quran.png"></button></li>
+					<li><button id="search"><i class="fa-solid fa-search"></i></button></li>
+					<li><button id="options"><i class="fa-solid fa-gear"></i></button></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- loader -->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
